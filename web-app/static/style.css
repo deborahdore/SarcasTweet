@@ -1,0 +1,25 @@
+#subtitle-row, #result-row, #title-row {
+    margin-top: 5%;
+}
+
+body {
+    background-color: #D3EAEB;
+}
+
+#title-col {
+    border-color: #83C5BE;
+}
+
+#check-button, #clear-button {
+    background-color: #006D77;
+    border-color: #006D77;
+    width: 150px;
+    height: 50px;
+}
+
+#check-button:hover, #clear-button:hover {
+    background-color: #83C5BE;
+    border-color: #83C5BE;
+    width: 160px;
+    height: 60px;
+}

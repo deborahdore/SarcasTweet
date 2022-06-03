@@ -1,0 +1,1 @@
+{"class":"com.johnsnowlabs.nlp.EmbeddingsFinisher","timestamp":1654193118676,"sparkVersion":"3.1.2","uid":"EmbeddingsFinisher_387ea74cee55","paramMap":{"inputCols":["sentence_embeddings"],"outputAsVector":true,"outputCols":["finished_sentence_embeddings"],"cleanAnnotations":false},"defaultParamMap":{"outputAsVector":false,"cleanAnnotations":false}}
