@@ -31,8 +31,6 @@ punctuation = "!$%&'()*+, -./:;<=>?[\]^_`{|}~«»"
 
 
 def clean_text(sentence):
-    print("Clean Text")
-
     sentence = sentence.lower() \
         .replace(r'http\S+', '') \
         .replace("\n", " ") \
@@ -48,7 +46,6 @@ def clean_text(sentence):
 
 
 def to_vector(df):
-    print("Sentence to Vector")
     return PipelineModel.load("pipeline") \
         .transform(df) \
         .select(explode(col("finished_sentence_embeddings")).alias('features')) \

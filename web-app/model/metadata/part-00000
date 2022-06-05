@@ -1,1 +1,1 @@
-{"class":"pyspark.ml.pipeline.PipelineModel","timestamp":1654200122613,"sparkVersion":"3.1.2","uid":"PipelineModel_bd6cd502bd30","paramMap":{"stageUids":["VectorAssembler_0a149ade73c4","SparkTorchModel_35663a4c0637"],"language":"Python"},"defaultParamMap":{}}
+{"class":"pyspark.ml.pipeline.PipelineModel","timestamp":1654263924442,"sparkVersion":"3.1.2","uid":"PipelineModel_24a04db46554","paramMap":{"stageUids":["VectorAssembler_f0de87af34bc","SparkTorchModel_917ed01309d6"],"language":"Python"},"defaultParamMap":{}}

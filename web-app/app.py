@@ -47,16 +47,20 @@ def home():
 
 @app.route('/', methods=['POST'])
 def post_sentence():
+    global spark
     try:
         if request.method == 'POST':
             sentence = request.form.to_dict().get("text")
             df_processed = process_sentence(sentence)
             prediction = predict(df_processed)
             if prediction.collect()[0][0] == 1.0:
-                return render_template("index.html", prediction="Yes, it is")
+                return render_template("index.html", prediction="Yes, it's sarcastic")
             else:
-                return render_template("index.html", prediction="No, it's not")
+                return render_template("index.html", prediction="No, it's not sarcastic")
     except:
+        # reload spark
+        spark.stop()
+        spark = load_PySpark()
         return render_template("index.html", prediction="Please, re-insert the sentence.")
 
 
