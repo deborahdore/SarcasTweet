@@ -16,3 +16,5 @@ The image can be run using:<br>
 ## **DATASET**
 The dataset was manyually created partially by using tweets and partially by combining pre-existing dataset.
 Tweets were manually annotated. 
+* Original dataset can be found [here](dataset/dataset.csv)
+* Annotated dataset can be found [here](dataset/dataset_annotated.csv)
